@@ -1,0 +1,8 @@
+Montai is a multi-threaded renderer for Inkscape.
+
+Inkscape is an amazingly powerful SVG production studio with one glaring flaw - it's renderer is single-threaded.
+
+Montai breaks up SVG files in and uses as many threads as you like to render each piece.
+
+Enjoy.
+
