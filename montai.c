@@ -123,7 +123,7 @@ int main(int argc, char * argv[]) {
 	svg_final_unit_height = (svg_height - svg_y) - (svg_unit_height * (num_units - 1));
 	
 	if (export_dims) {
-		sscanf(import_dims, "%d:%d", &png_width, &png_height);
+		sscanf(export_dims, "%d:%d", &png_width, &png_height);
 	} else {
 		png_width = svg_width - svg_x;
 		png_height = svg_height - svg_y;
@@ -178,7 +178,7 @@ void print_usage(FILE *stream, int exit_code) {
 			 "  -d, --dimensions=x0:y0:x1:y1  SVG input dimensions.\n"
 			 "  -e, --export_size=w:h         PNG export dimensions.\n"
 			 "  -v, --verbose                 Print verbose messages.\n");
-	exit (exit_code);		 
+	exit (exit_code);
 }
 
 void *render() {
